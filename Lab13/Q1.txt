@@ -1,0 +1,4 @@
+1) Integrity
+2) Tripwire or AIDE
+3) The baseline database must be protected using cryptographic signatures
+or stored in a secure read-only location.

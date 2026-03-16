@@ -1,0 +1,20 @@
+a) Total Capacity = 528,482,304 bytes
+≈ 504 MB
+
+b) struct HDD {
+    int cylinders;
+    int tracks_per_cylinder;
+    int sectors_per_track;
+    int bytes_per_sector;
+    int rpm;
+
+    long long totalCapacity() {
+        return (long long)cylinders *
+               tracks_per_cylinder *
+               sectors_per_track *
+               bytes_per_sector;
+    }
+};
+
+C)  Track วงกลมของข้อมูลบน พื้นผิว disk หนึ่งจาน
+    Cylinder กลุ่มของ tracks ที่ตำแหน่งเดียวกันบนทุก disk platter

@@ -1,0 +1,21 @@
+a) 65 → 67 → 37 → 14 → 98 → 122 → 124 → 183
+b) Total Head Movement = 236
+c) int fcfs(int head, vector<int> requests) {
+    int totalMovement = 0;
+
+    for (int r : requests) {
+        totalMovement += abs(r - head);
+        head = r;
+    }
+
+    return totalMovement;
+}
+
+int main() {
+    vector<int> req = {98, 183, 37, 122, 14, 124, 65, 67};
+
+    cout << "FCFS Total Head Movement = "
+         << fcfs(53, req) << endl;
+
+    return 0;
+}
